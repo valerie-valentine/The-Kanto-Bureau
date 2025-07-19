@@ -4,6 +4,7 @@ from typing import Annotated
 from app.models.test_model import Pokemon
 from .database import engine, SessionLocal, Base
 from sqlalchemy.orm import Session
+from sqlalchemy import select
 
 
 app = FastAPI()
@@ -27,18 +28,21 @@ class PokemonBase(BaseModel):
     level: int
 
 
-@app.get("/")
-def root():
-    return {"message": "Hello world >:3"}
-
-
 @app.post("/pokemon")
 def create_pokemon(pokemon: PokemonBase, db: db_dependency):
     db_pokemon = Pokemon(
         name=pokemon.name, type=pokemon.type, level=pokemon.level)
     db.add(db_pokemon)
     db.commit()
-    return db_pokemon
+    return {f"{db_pokemon.name}": "Sucessfully created"}
+
+
+@app.get("/pokemon")
+def get_all_pokemon(db: db_dependency):
+    query = select(Pokemon)
+    result = db.scalars(query).all()
+
+    return result
 
 
 # may take a lil bit longer because adding a record to a db; makes a network call
