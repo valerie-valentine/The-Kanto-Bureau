@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from typing import Annotated
-from .models.test_model import Pokemon
+from app.models.test_model import Pokemon
 from .database import engine, SessionLocal, Base
 from sqlalchemy.orm import Session
 
@@ -39,3 +39,9 @@ def create_pokemon(pokemon: PokemonBase, db: db_dependency):
     db.add(db_pokemon)
     db.commit()
     return db_pokemon
+
+
+# may take a lil bit longer because adding a record to a db; makes a network call
+    # RULE: if something is awaitable use await & by default will need to use async
+    # when there is a async version of something try to use async
+    # research if there are async methods of these methods or is it okay because we're usng async already or do we still need to await this?

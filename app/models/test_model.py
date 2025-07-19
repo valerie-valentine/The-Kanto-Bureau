@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import ForeignKey, String, Integer
 from typing import Optional, TYPE_CHECKING
-from database import Base
+from app.database import Base
 
 
 class Pokemon(Base):
