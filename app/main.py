@@ -28,6 +28,11 @@ class PokemonBase(BaseModel):
     level: int
 
 
+@app.get("/")
+def root():
+    return {"message": "Hello World >:3"}
+
+
 @app.post("/pokemon")
 def create_pokemon(pokemon: PokemonBase, db: db_dependency):
     db_pokemon = Pokemon(
