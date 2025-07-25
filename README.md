@@ -39,8 +39,9 @@ Stretch Goals:
 - Raspberry Pi integration
 - Custom team building
 
-<img width="1024" height="1536" alt="ChatGPT Image Jul 24, 2025, 10_38_34 PM" src="https://github.com/user-attachments/assets/45557cc4-2234-4f1c-a2e8-819961a6ff71" />
 
+
+![Uploading ChatGPT Image Jul 24, 2025, 10_38_34 PM.png…]()
 
 
 
