@@ -40,11 +40,7 @@ Stretch Goals:
 - Custom team building
 
 
-
-![Uploading ChatGPT Image Jul 24, 2025, 10_38_34 PM.png…]()
-
-
-
+<img width="368" height="553" alt="ChatGPT Image Jul 24, 2025, 10_43_18 PM" src="https://github.com/user-attachments/assets/509c29be-6179-4dc4-afe7-2e4080e7cf0a" />
 
 
 
