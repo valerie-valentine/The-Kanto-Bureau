@@ -16,3 +16,11 @@ engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # does schema work to check the database types, column names and table names.
 Base = declarative_base()
+
+
+def get_db():  # Dependency for route functions
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
