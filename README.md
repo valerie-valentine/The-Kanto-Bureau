@@ -12,7 +12,7 @@ This project is in the early design phase. Below are some of the tools I'm using
 Please stay tuned! More to come as I move from design to development.
 
 ## MVP
-Objective: A mini-game where players manage Pokémon job assignments based on their strengths.
+Objective: A mini-game where players manage Pokémon job assignments based on their types.
 
 Overview: This project is a web-based mini-game for Pokémon fans where players take on the role of a Job Coordinator. Inspired by the Poké Jobs feature in Sword & Shield, the game lets users assign Pokémon to various odd jobs based on their individual stats.
 
