@@ -40,6 +40,6 @@ Stretch Goals:
 - Custom team building
 
 
-
+<img width="1920" height="1080" alt="User Journey" src="https://github.com/user-attachments/assets/25853f73-9707-48ed-b8e9-d39606e739c9" />
 
 
