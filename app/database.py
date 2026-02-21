@@ -8,7 +8,7 @@ load_dotenv()
 
 DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URI")
 
-# connecton methods ~
+# connecton methods:
 # creates the connection from the api server to my database; this runs when my app starts up. # the initial connecton
 # engine = create_async_engine(DATABASE_URL)
 engine = create_engine(DATABASE_URL)

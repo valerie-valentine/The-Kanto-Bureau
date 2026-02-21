@@ -5,7 +5,7 @@ from app.routes.player_routes import router as player_router
 from app.routes.job_routes import router as job_router
 
 
-# Register your routers here
+# Register routers here
 app = FastAPI()
 app.include_router(pokemon_stat_router,
                    prefix="/pokemon_stat", tags=["PokemonStat"])
